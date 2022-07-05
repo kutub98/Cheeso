@@ -136,6 +136,9 @@ ol {
 
 /*-------bannerPart end------*/
 
+
+
+/*-------servicePart start------*/
 .servicePart {
   align-items: center;
   text-align: center;
@@ -190,6 +193,8 @@ ol {
 }
 .serImgDescri {
   list-style: 80px;
+  width: 100%;
+  height: auto;
 }
 .serImgDescri h3 {
   color: rgb(3, 3, 73);
@@ -211,8 +216,18 @@ ol {
   -moz-transform: scale(1);
   -ms-transform: scale(1);
   -o-transform: scale(1);
+}.btn_2:hover .imge{
+  border: 5px solid rgb(163, 4, 4);
+  transition: 0.2s;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -ms-transition: 0.2s;
+  -o-transition: 0.2s;
 }
-
+.serImgDescri:hover .imge{
+ border:  5px solid rgb(163, 4, 4);;
+  transition: 0.2s;
+}
 .btn_2:hover {
   background: rgb(250, 135, 4);
   border-radius: 30px;
@@ -229,7 +244,88 @@ ol {
   -ms-transform: scale(1);
   -o-transform: scale(1);
 }
-.btn_2:hover .imge {
-  border: 5px solid rgb(163, 4, 4);
-  transition: 0.2s;
+
+.serImgDescriII:hover .btn_2{
+  background: rgb(250, 135, 4);
+  border-radius: 30px;
+  border-bottom: none;
+  transform: scale(1);
+  color: white;
+  font-weight: bold;
 }
+.serImgDescriII .btn_2:hover .imge{
+  border: 5px solid rgb(163, 4, 4);
+}
+.serImgDescriII {
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+/*-------servicePart end------*/
+
+
+
+
+/*-------benifits start------*/
+.benifitsPart{
+  margin: 100px 0;
+  background-color: antiquewhite;
+  position: relative;
+}
+.benifits h1{
+  font-size: 60px;
+  color: rgb(0, 0, 70);
+  margin: 30px 0;
+}
+.benifits p{
+  font-size: 18px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin: 15px 0;
+}
+.cheeseImg {
+  width: 550px;
+  position: relative;
+}
+.cheeseImg img{
+  position: absolute;
+  width: 550px;
+  height: 550px;
+  right: -100px;
+  top: 100px;
+}
+.listsOfchees{
+  display: flex;
+  align-items: center;
+}
+.listsOfchees img{
+  width: 80px;
+  height: 80px;
+  margin: 5px 20px 5px 0px;
+}
+.listsOfchees h3{
+  margin: 16px 0;
+  color: rgb(0, 0, 70);
+  font-weight: bold;
+  font-size: 30px;
+}
+hr{
+  background-color: rgb(65, 62, 62);
+  width: 100%;
+  height: 3px;
+}
+.CIRCLE{
+  position: absolute;
+  left: -100px;
+  bottom: 50px;
+  
+}
+.CIRCLE img{
+  animation: spin 12s var(--d,0s) linear infinite; /* duration = 12s, numbor of item = 6 so a delay of 12/6 = 2s */
+  
+}
+@keyframes spin {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+/*-------benifits end------*/
+
